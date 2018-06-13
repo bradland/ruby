@@ -137,6 +137,12 @@ with all sufficient information, see the ChangeLog file or Redmine
 
 === Stdlib updates (outstanding ones only)
 
+* Bundler
+
+  * Add Bundler to Standard Library. [Feature #12733]
+
+  * Use 1.16.1. It's latest stable version.
+
 * ERB
 
   * Add :trim_mode and :eoutvar keyword arguments to ERB.new. Now non-keyword arguments other than first one
