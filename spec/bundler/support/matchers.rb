@@ -236,6 +236,7 @@ module Spec
     end
 
     def lockfile_should_be(expected)
+      expected = expected.dup.gsub!(/localhost/, '') if defined?(URI::File)
       expect(bundled_app("Gemfile.lock")).to read_as(strip_whitespace(expected))
     end
   end
